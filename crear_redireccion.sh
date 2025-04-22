@@ -16,11 +16,11 @@ fi
 cd ./www || exit
 
 # Pedir URL de redirección
-read -p "¿A qué URL querés redirigir? (incluye https://): " redirect_url
+read -p "¿A qué URL quieres redirigir? (incluye https://): " redirect_url
 
 # Validar que no esté vacía
 if [[ -z "$redirect_url" ]]; then
-  echo "❌ No se ingresó una URL. Abortando."
+  echo "❌ No se ingresó una URL. Saliendo."
   exit 1
 fi
 
